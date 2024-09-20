@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Images -->
+     <link rel="icon" href="assets/image/Calculator_512.webp">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="cs/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+
+    </header>
+    <main>
+        <div class="container border border-black border-1 rounded-5 bg-black boxShadow">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center textShadow my-3">
+                        Calculator
+                    </h1>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div>
+                        <input type="text" id="inputDisplay" class="form-control bg-black text-warning fs-4 textAlign ">
+                    </div>
+                    <div class="buttons btn-dark my-3">
+                        <button onclick="clearDisplay()" class="animation1 ">C</button>
+                        <button onclick="appenToDisplay('-1')" class="animation1 ">()</button>
+                        <button onclick="appenToDisplay('%')" class="animation1 ">%</button>
+                        <button onclick="appenToDisplay('\\')" class="animation1">\</button>
+                        <button onclick="appenToDisplay('7')" class="animation">7</button>
+                        <button onclick="appenToDisplay('8')" class="animation">8</button>
+                        <button onclick="appenToDisplay('9')" class="animation">9</button>
+                        <button onclick="appenToDisplay('*')" class="animation1">*</button>
+                        <button onclick="appenToDisplay('4')" class="animation">4</button>
+                        <button onclick="appenToDisplay('5')" class="animation">5</button>
+                        <button onclick="appenToDisplay('6')" class="animation">6</button>
+                        <button onclick="appenToDisplay('-')" class="animation1 ">-</button>
+                        <button onclick="appenToDisplay('1')" class="animation">1</button>
+                        <button onclick="appenToDisplay('2')" class="animation">2</button>
+                        <button onclick="appenToDisplay('3')" class="animation">3</button>
+                        <button onclick="appenToDisplay('+')" class="animation1 ">+</button>
+                        <button onclick="appenToDisplay('0')" class="animation">0</button> 
+                        <button onclick="appenToDisplay('00')" class="animation">00</button>
+                        <button onclick="appenToDisplay('.')" class="animation">.</button>
+                        <button onclick="calculate()" class="animation1  fw-bold ">=</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Bootstrap 5 -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
